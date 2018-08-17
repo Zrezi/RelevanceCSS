@@ -1,0 +1,30 @@
+.rlv-progress {
+    margin: $progressbar-height 0px;
+    width: 100%;
+    height: $progressbar-height;
+    background-color: $progressbar-empty-color;
+    .rlv-progress-inner {
+        width: 0%;
+        height: $progressbar-height;
+        background-color: $progressbar-fill-color;
+        transition: all $progressbar-transition-time ease-in;
+        .rlv-progress-text {
+            display: none;
+            font-size: $progressbar-height;
+            color: $progressbar-text-color;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &.rounded {
+        border-radius: $progressbar-height / 2;
+        .rlv-progress-inner {
+            border-radius: $progressbar-height / 2;
+        }
+    }
+    &:hover {
+        .rlv-progress-inner {
+            background-color: $progressbar-hover-color;
+        }
+    }
+}

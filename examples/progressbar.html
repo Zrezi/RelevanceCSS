@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Relevance CSS Examples - Progress Bars</title>
+        <link rel="stylesheet" href="../css/Relevance.css"/>
+        <script src="../js/_progressbar.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="test" class="rlv-progress rounded showtext"></div>
+        <div class="rlv-progress rounded showtext"></div>
+        <script>
+            let pbm = new ProgressBarManager();
+            let i = 0;
+            setInterval(function() {
+                i++;
+                if (i > 100) i = 0;
+                pbm.getProgressBarById(null).setProgress(i);
+                pbm.getProgressBarById('test').setProgress(100 - i);
+            }, 100);
+        </script>
+    </body>
+</html>

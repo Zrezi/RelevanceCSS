@@ -1,0 +1,14 @@
+.rlv-tooltip {
+    visibility: visible;
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    min-width: 100px;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
