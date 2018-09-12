@@ -4,9 +4,12 @@
 @import "components/_progressbar";
 @import "components/_shadow";
 @import "components/_tooltip";
+@import "components/_navbar";
+@import "components/perspective";
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
-* {
-    font-family: 'Roboto Condensed', sans-serif;
+html, body {
+    margin: 0;
+    padding: 0;
 }
+
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
