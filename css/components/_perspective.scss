@@ -1,8 +1,14 @@
 .rlv-perspective {
     perspective: 10px;
+    text-align: center;
     display: inline-block;
+    max-width: 100%;
     .rlv-perspective-body {
         padding: 10px;
         transition: transform 0.25s;
+        img {
+            max-width: 100%;
+            display: block;
+        }
     }
 }

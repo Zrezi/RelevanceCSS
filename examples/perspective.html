@@ -4,17 +4,19 @@
         <title>Relevance CSS Examples - Tooltips</title>
         <link rel="stylesheet" href="../css/Relevance.css"/>
         <script src="../js/_perspective.js"></script>
-        <script src="../js/_tooltip.js"></script>
     </head>
     <body>
-        <div class="rlv-perspective" style="text-align: center;">
-            <div class="rlv-perspective-body shadow-2">
-                <h3>This is a perspective card</h3>
-                <p>With some info and ignore resize events as long as an actualResizeHandler execution is in the queue</p>
+        <div style="text-align: center;">
+            <div class="rlv-perspective">
+                <div class="rlv-perspective-body">
+                    <img src="../Desert.jpg">
+                </div>
             </div>
         </div>
         <script>
-            let pm = new PerspectiveManager();
+            window.onload = function() {
+                let pm = new PerspectiveManager();
+            }
         </script>
     </body>
 </html>

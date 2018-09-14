@@ -1,0 +1,16 @@
+.rlv-zoom {
+    background-color: rgb(127, 127, 127);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    img {
+        display: block;
+        margin: auto;
+    }
+}
